@@ -61,7 +61,7 @@ def about(request: Request):
     projects = [
         Project(
             name="Окей, Горный бот",
-            version="2.0",
+            version="2.0.0",
             lang="Python",
             hashtags=["временно_неактивный"],
             gh_url="https://github.com/karrless/og_bots",
@@ -71,7 +71,7 @@ def about(request: Request):
         ),
         Project(
             name="АПМ-21 бот",
-            version="2.1",
+            version="2.1.0",
             lang="Python",
             hashtags=["активный"],
             gh_url=None,
@@ -80,7 +80,7 @@ def about(request: Request):
         ),
         Project(
             name="Вентиляция Горного бот",
-            version="0.1",
+            version="0.1.1",
             lang="Python",
             hashtags=["в_разработке"],
             gh_url="https://github.com/karrless/spmi_vent_tg_bot",
@@ -90,12 +90,21 @@ def about(request: Request):
         ),
         Project(
             name="Хакатон цифрогаз",
-            version="1",
+            version="1.0.0",
             lang="Python",
             hashtags=["неактивный"],
             gh_url="https://github.com/karrless/digitalgaz",
             desc="Бэкенд для сайта и бот, с помощью которого можно считать данные с фотографии датчика расхода воды."
                  "Был выполнен в рамках хакатона Газпрома Цифрогаз-2024."
+        ),
+        Project(
+            name="Этот сайт",
+            version="0.1.1",
+            lang="Python",
+            hashtags=["в_разработке", "активный"],
+            gh_url="https://github.com/karrless/pywebsite",
+            desc="Персональный сайт-визитка, на котором вы находитесь. "
+                 "На данный момент доступна только одна временная страница, в дальнейшем все будет лучше и красивее"
         ),
     ]
     context = {"request": request, "jobs": jobs, "projects": projects}
