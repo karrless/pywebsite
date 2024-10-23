@@ -1,8 +1,8 @@
 import os
 from typing import Any
-
+from dotenv import load_dotenv
 from fastapi.templating import Jinja2Templates
-
+load_dotenv()
 
 def get_env(name: str, _type: Any=str) -> Any:
     """
