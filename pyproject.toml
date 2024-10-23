@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pywebsite"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["karrless <konstantin.geydarov@gmail.com>"]
 license = "MIT"

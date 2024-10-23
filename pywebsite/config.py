@@ -1,6 +1,8 @@
 import os
 from typing import Any
 
+from fastapi.templating import Jinja2Templates
+
 
 def get_env(name: str, _type: Any=str) -> Any:
     """
@@ -18,3 +20,6 @@ def get_env(name: str, _type: Any=str) -> Any:
 
 SERVER_HOST = get_env("SERVER_HOST")
 SERVER_PORT = get_env("SERVER_PORT", int)
+
+
+html_templates = Jinja2Templates(directory='pywebsite/app/templates')

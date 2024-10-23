@@ -1,0 +1,17 @@
+{
+    "name": "Karrless",
+    "short_name": "Karrless",
+    "icons": [
+      {
+        "src": "/static/icons/favicon/192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/static/icons/favicon/512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "display": "standalone"
+  }
