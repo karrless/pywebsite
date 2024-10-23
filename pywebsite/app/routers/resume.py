@@ -107,5 +107,5 @@ def about(request: Request):
                  "На данный момент доступна только одна временная страница, в дальнейшем все будет лучше и красивее"
         ),
     ]
-    context = {"request": request, "jobs": jobs, "projects": projects}
+    context = {"request": request, "jobs": jobs, "projects": projects, "title": "Резюме "}
     return html_templates.TemplateResponse(name="resume_temp.html", context=context)
