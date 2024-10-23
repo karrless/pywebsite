@@ -4,6 +4,9 @@
     margin: 0;
     font-family: Jetbrains Mono;
 }
+body {
+    padding: 100px 0;
+}
 h2 {
     color: #0f273d;
 }
@@ -26,7 +29,8 @@ a:-webkit-any-link {
 }
 .temp {
     width: 75%;
-    margin: 100px auto;
+    margin: auto;
+    max-width: 1080px;
 }
 .part {
     margin: 25px 0;
@@ -59,6 +63,7 @@ a:-webkit-any-link {
     background-color: #689dcf;
     padding: 0.05em 0.5em 0.06em;
     border-radius: 2em;
+    line-height: 1.8;
 }
 
 .icon {
