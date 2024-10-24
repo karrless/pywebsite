@@ -61,6 +61,7 @@ a:-webkit-any-link {
 .hashtags {
     font-size: 0.85em;
     margin: 0.05em 0;
+    text-align: left;
 }
 .hashtags > span {
     color: #fff;
@@ -68,6 +69,7 @@ a:-webkit-any-link {
     padding: 0.05em 0.5em 0.06em;
     border-radius: 2em;
     line-height: 1.8;
+
 }
 
 .icon {
