@@ -30,7 +30,10 @@ def about(request: Request):
         lang: str
         hashtags: list[str]
         gh_url: str | None
+        tg_url: str | None
+        site_url: str | None
         desc: str
+        
         
     jobs = [
 
@@ -61,42 +64,61 @@ def about(request: Request):
     projects = [
         Project(
             name="Окей, Горный бот",
-            version="2.0",
+            version="2.0.0",
             lang="Python",
             hashtags=["временно_неактивный"],
             gh_url="https://github.com/karrless/og_bots",
+            tg_url=None,
+            site_url=None,
             desc=('Бот для группы ВК "Окей, Горный", '
                   'с помощью которого модераторы группы могли отвечать на вопросы абитуриентов, '
                   'а также абитуриенты могла найти своих соседей по комнате в общежитии')
         ),
         Project(
             name="АПМ-21 бот",
-            version="2.1",
+            version="2.1.0",
             lang="Python",
             hashtags=["активный"],
             gh_url=None,
+            tg_url=None,
+            site_url=None,
             desc="Телеграм бот для моей студенческой группы АПМ-21, в котором есть расписание занятий, "
                  "оповещения о ближайших занятиях и различные inline-штучки."
         ),
         Project(
-            name="Вентиляция Горного бот",
-            version="0.1",
+            name="Вентиляция горного бот",
+            version="0.1.1",
             lang="Python",
             hashtags=["в_разработке"],
             gh_url="https://github.com/karrless/spmi_vent_tg_bot",
+            tg_url=None,
+            site_url=None,
             desc='Телеграм бот для оповещения персонала Горного университета о различных авариях '
                  'вентиляции различных корпусов 1 учебного центра, предоставление графиков различных параметров. '
                  'В данный момент находится в разработке.'
         ),
         Project(
             name="Хакатон цифрогаз",
-            version="1",
+            version="1.0.0",
             lang="Python",
             hashtags=["неактивный"],
             gh_url="https://github.com/karrless/digitalgaz",
+            tg_url="tg://resolve?domain=oosd_spmu_bot",
+            site_url="https://digitalgaz.karrless.ru",
             desc="Бэкенд для сайта и бот, с помощью которого можно считать данные с фотографии датчика расхода воды."
                  "Был выполнен в рамках хакатона Газпрома Цифрогаз-2024."
         ),
+        Project(
+            name="Этот сайт",
+            version="0.1.1",
+            lang="Python",
+            hashtags=["в_разработке", "активный"],
+            gh_url="https://github.com/karrless/pywebsite",
+            site_url="https://karrless.ru",
+            tg_url=None,
+            desc="Персональный сайт-визитка, на котором вы находитесь. "
+                 "На данный момент доступна только одна временная страница, в дальнейшем всё будет лучше и красивее"
+        ),
     ]
-    context = {"request": request, "jobs": jobs, "projects": projects}
+    context = {"request": request, "jobs": jobs, "projects": projects, "title": "Резюме "}
     return html_templates.TemplateResponse(name="resume_temp.html", context=context)
