@@ -1,0 +1,20 @@
+<svg width="280" height="280" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+<style>
+    path {
+      fill: black;
+    }
+    @media (prefers-color-scheme: dark) {
+      path {
+        fill: white;
+      }
+    }
+</style>
+<g clip-path="url(#clip0_13_2)">
+<path d="M222.04 48.728L134.744 123.736L187.48 231H124.248L90.968 160.088L71 177.496L59.48 231H3.928L42.584 48.728H98.136L90.968 83.544C88.92 93.272 86.36 103.085 83.288 112.984C88.408 106.499 98.2213 96.4293 112.728 82.776L148.824 48.728H222.04ZM261.666 180.312L251.17 231H198.434L209.186 180.312H261.666Z" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_13_2">
+<rect width="280" height="280"/>
+</clipPath>
+</defs>
+</svg>
