@@ -43,9 +43,12 @@ a:-webkit-any-link {
 .job > p, .project > p, .part > p {
     margin-top: 0.35em;
 }
-.project.title {
+.project .title {
     display: flex;
     align-items: center;
+}
+.project .title > a {
+    margin-right: 0.5em;
 }
 .title > span {
     margin-right: 0.5em;
